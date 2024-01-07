@@ -94,8 +94,8 @@ gltfLoader.load(
         // Get each object
         const bakedMesh = gltf.scene.children.find((child) => child.name === 'baked')
         const portalLightMesh = gltf.scene.children.find((child) => child.name === 'portalLight')
-        const poleLightAMesh = gltf.scene.children.find((child) => child.name === 'poleLightA')
-        const poleLightBMesh = gltf.scene.children.find((child) => child.name === 'poleLightB')
+        const poleLightAMesh = gltf.scene.children.find((child) => child.name === 'poleLightLeft')
+        const poleLightBMesh = gltf.scene.children.find((child) => child.name === 'poleLightRight')
 
         // Apply materials
         bakedMesh.material = bakedMaterial
